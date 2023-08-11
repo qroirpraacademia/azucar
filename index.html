@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+  
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+    }
+  
+    .topic {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  
+    .topic h2 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 400px;
+      cursor: pointer;
+    }
+  
+    .summary {
+      display: none
+      margin-top: 5px;
+    }
+  </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="topic">
+      <h2 onclick="toggleSummary('summary1')">O que é uma alimentação saudável e quais seus beneficios?</h2>
+      <p class="summary" id="summary1">A alimentação saudável consiste <b> no cardápio ou na dieta que prioriza os grupos alimentares que fazem bem para a saúde do ser humano</b>, sendo: frutas;verduras;legumes;leguminosas;sementes;cereais integrais;proteínas magras;gorduras boas (insaturadas). <br>
+           <br>
+      </p>
+    </div>
+    
+    <div class="topic">
+      <h2 onclick="toggleSummary('summary2')">O que visar para ter uma alimentação saudável</h2>
+      <p class="summary" id="summary2"> Para visar uma alimentação mais saudável e equilibrada podemos citar: <br>
+          <br>
+              <b> Limite a ingestão de gorduras saturadas. <br>
+                  Evite alimentos ricos em gorduras. <br>
+                  Reduza a ingestão de açúcares. <br>
+                  Procure reduzir o sal da alimentação. <br>
+                  Invista em alimentos naturais como frutas, verduras e legumes. <br>
+                  Beba muita água ao longo do seu dia. <br>
+                  Coma pequenas porções ao longo do dia. <br>
+              </b>    
+          <br>
+      </p>
+    </div>
+    
+    <div class="topic">
+      <h2 onclick="toggleSummary('summary3')">Dicas de dietas</h2>
+      <p class="summary" id="summary3">
+          <b> Atividade Física:</b> Lembre-se de combinar uma dieta saudável com atividade física regular para obter melhores resultados em termos de saúde e controle de peso. <br>
+          <b>Planejamento:</b> Planeje suas refeições com antecedência para evitar escolhas alimentares não saudáveis de última hora. <br>
+          <b>Hidratação:</b> Beba bastante água ao longo do dia. A hidratação adequada é essencial para o funcionamento adequado do corpo. <br>
+          <b>Variedade e Equilíbrio:</b> Consuma uma variedade de alimentos para garantir que você obtenha uma ampla gama de nutrientes essenciais. Equilibre suas refeições com carboidratos, proteínas magras, gorduras saudáveis, vitaminas e minerais. <br</p>
+          >
+    </div>
+  </div>
+  
+  <script>
+  function toggleSummary(id) {
+    var summary = document.getElementById(id);
+    if (summary.style.display === "none") {
+      summary.style.display = "block";
+    } else {
+      summary.style.display = "none";
+    }
+  }
+  </script>
+  </body>
+</html>
